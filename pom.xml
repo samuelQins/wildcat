@@ -57,7 +57,7 @@
         <ttl.version>2.10.1</ttl.version>
         <minio.version>3.0.12</minio.version>
         <velocity.version>1.7</velocity.version>
-        <security.oauth.version>2.3.4.RELEASE</security.oauth.version>
+        <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
         <security.oauth.auto.version>2.1.2.RELEASE</security.oauth.auto.version>
     </properties>
 
