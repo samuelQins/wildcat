@@ -1,0 +1,3 @@
+com\wildcatcloud\wildcat\common\log\annotation\SysLog.class
+com\wildcatcloud\wildcat\common\log\aspect\SysLogAspect.class
+com\wildcatcloud\wildcat\common\log\LogAutoConfiguration.class

@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "ignore",
+      "type": "com.wildcatcloud.wildcat.gateway.config.FilterIgnorePropertiesConfig",
+      "sourceType": "com.wildcatcloud.wildcat.gateway.config.FilterIgnorePropertiesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ignore.clients",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.wildcatcloud.wildcat.gateway.config.FilterIgnorePropertiesConfig"
+    },
+    {
+      "name": "ignore.swagger-providers",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.wildcatcloud.wildcat.gateway.config.FilterIgnorePropertiesConfig"
+    }
+  ],
+  "hints": []
+}

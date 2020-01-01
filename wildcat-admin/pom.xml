@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  *
+  *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+  *
+  *  Do not alter or remove copyright notices or this file header
+  *
+  *  This code is free software; you can redistribute it and/or modify it
+  *
+  *  Author: wlidcat (bishengqin@gmail.com)
+  *
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wildcat</artifactId>
+        <groupId>com.wildcatcloud.wildcat</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wildcat-admin</artifactId>
+    <name>wildcat-admin</name>
+    <modules>
+        <module>wildcat-admin-api</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <description>wildcat 系统管理聚合模块</description>
+
+</project>

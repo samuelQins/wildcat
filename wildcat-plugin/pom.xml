@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  *
+  *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+  *
+  *  Do not alter or remove copyright notices or this file header
+  *
+  *  This code is free software; you can redistribute it and/or modify it
+  *
+  *  Author: wlidcat (bishengqin@gmail.com)
+  *
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wildcat</artifactId>
+        <groupId>com.wildcatcloud.wildcat</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>wildcat-codegen</module>
+    </modules>
+    <artifactId>wildcat-plugin</artifactId>
+
+    <description>wildcat 拓展插件模块</description>
+
+</project>

@@ -1,0 +1,31 @@
+/*
+ *
+ *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+ *
+ *  Do not alter or remove copyright notices or this file header
+ *
+ *  This code is free software; you can redistribute it and/or modify it
+ *
+ *  Author: wlidcat (bishengqin@gmail.com)
+ *
+ */
+
+export const tableOption = {
+  border: true,
+  index: true,
+  indexLabel: '序号',
+  stripe: true,
+  menuAlign: 'center',
+  align: 'center',
+  editBtn: false,
+  delBtn: false,
+  addBtn: false,
+  column: [
+#foreach ($column in $columns)
+	  {
+      label: '$column.comments',
+      prop: '$column.lowerAttrName'
+    },
+#end
+  ]
+}

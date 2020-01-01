@@ -1,0 +1,25 @@
+/*
+ *
+ *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+ *
+ *  Do not alter or remove copyright notices or this file header
+ *
+ *  This code is free software; you can redistribute it and/or modify it
+ *
+ *  Author: wlidcat (bishengqin@gmail.com)
+ *
+ */
+package ${package}.${moduleName}.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import ${package}.${moduleName}.entity.${className};
+
+/**
+ * ${comments}
+ *
+ * @author ${author}
+ * @date ${datetime}
+ */
+public interface ${className}Mapper extends BaseMapper<${className}> {
+
+}

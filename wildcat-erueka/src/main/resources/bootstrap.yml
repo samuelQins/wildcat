@@ -1,0 +1,23 @@
+server:
+  port: 1021
+
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    config:
+      enabled: false
+
+eureka:
+  instance:
+    hostname: wildcat-eureka
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://wildcat:wildcat@${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    eviction-interval-timer-in-ms: 4000
+    enable-self-preservation: false
+    renewal-percent-threshold: 0.9

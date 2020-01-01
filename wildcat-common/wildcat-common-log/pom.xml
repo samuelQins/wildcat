@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  *
+  *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+  *
+  *  Do not alter or remove copyright notices or this file header
+  *
+  *  This code is free software; you can redistribute it and/or modify it
+  *
+  *  Author: wlidcat (bishengqin@gmail.com)
+  *
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wildcat-common</artifactId>
+        <groupId>com.wildcatcloud.wildcat</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>wildcat-common-log</artifactId>
+    <name>wildcat-common-log</name>
+    <packaging>jar</packaging>
+
+    <description>wildcat日志服务</description>
+    <dependencies>
+        <!--工具类核心包-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-core</artifactId>
+        </dependency>
+        <!--ADMIN接口模块-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-admin-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>

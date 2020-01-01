@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  *
+  *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+  *
+  *  Do not alter or remove copyright notices or this file header
+  *
+  *  This code is free software; you can redistribute it and/or modify it
+  *
+  *  Author: wlidcat (@gmail.com)
+  *
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-dependencies-parent</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wildcat-common-bom</artifactId>
+    <version>${wildcat.version}</version>
+    <packaging>pom</packaging>
+    <description>公共版本控制</description>
+
+    <properties>
+        <wildcat.version>0.0.1-SNAPSHOT</wildcat.version>
+        <jackson.modules>2.9.6</jackson.modules>
+        <mybatis-plus.version>3.0.6</mybatis-plus.version>
+        <mysql.connector.version>8.0.13</mysql.connector.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+           <!-- &lt;!&ndash;pigx 工具包&ndash;&gt;
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-core</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-data</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-gateway</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-job</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-log</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-minio</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-security</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-swagger</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-common-transaction</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.pig4cloud</groupId>
+                <artifactId>pigx-upms-api</artifactId>
+                <version>${pigx.version}</version>
+            </dependency>-->
+            <!--工具类核心包-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-admin-api</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-core</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <!--swagger-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-swagger</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <!--安全模块-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-security</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <!--代码生成模板引擎-->
+            <!--数据库操作-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-data</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <!--日志操作-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-log</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
+            <!--jackson模块-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-modules-java8</artifactId>
+                <version>${jackson.modules}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  *
+  *      Copyright (c) 2019-2026, wlidcat All rights reserved.
+  *
+  *  Do not alter or remove copyright notices or this file header
+  *
+  *  This code is free software; you can redistribute it and/or modify it
+  *
+  *  Author: wlidcat (bishengqin@gmail.com)
+  *
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wildcat-plugin</artifactId>
+        <groupId>com.wildcatcloud.wildcat</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wildcat-codegen</artifactId>
+    <name>wildcat-codegen</name>
+    <packaging>jar</packaging>
+
+    <description>代码生成模块</description>
+
+    <dependencies>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!--数据操作-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-data</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--common-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-core</artifactId>
+        </dependency>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-swagger</artifactId>
+        </dependency>
+        <!--安全模块-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-security</artifactId>
+        </dependency>
+        <!--代码生成模板引擎-->
+        <dependency>
+            <artifactId>velocity</artifactId>
+            <groupId>org.apache.velocity</groupId>
+            <version>${velocity.version}</version>
+        </dependency>
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>

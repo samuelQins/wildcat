@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.wildcatcloud.wildcat.data.cache.RedisTemplateConfig,\
+    com.wildcatcloud.wildcat.data.cache.RedisCacheManagerConfig,\
+    com.wildcatcloud.wildcat.data.cache.RedisCacheAutoConfiguration,\
+    com.wildcatcloud.wildcat.data.tenant.WildCatTenantConfigProperties,\
+    com.wildcatcloud.wildcat.data.tenant.TenantContextHolderFilter,\
+    com.wildcatcloud.wildcat.data.mybatis.MybatisPlusConfig

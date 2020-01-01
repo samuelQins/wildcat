@@ -1,0 +1,5 @@
+com\wildcatcloud\wildcat\codegen\entity\GenConfig.class
+com\wildcatcloud\wildcat\codegen\mapper\SysGeneratorMapper.class
+com\wildcatcloud\wildcat\codegen\entity\ColumnEntity.class
+com\wildcatcloud\wildcat\codegen\entity\TableEntity.class
+com\wildcatcloud\wildcat\codegen\WildCatCodeGenApplication.class
