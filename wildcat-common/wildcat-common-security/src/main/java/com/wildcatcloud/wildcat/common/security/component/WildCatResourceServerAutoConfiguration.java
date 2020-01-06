@@ -34,7 +34,7 @@ import java.io.IOException;
  * 定义异常BootOAuth2Exception 的序列化类
  */
 @ComponentScan("com.wildcatcloud.wildcat.common.security")
-public class WilCatResourceServerAutoConfiguration{
+public class WildCatResourceServerAutoConfiguration {
 
     @Bean
     @Primary

@@ -12,13 +12,13 @@
 package com.wildcatcloud.wildcat.common.security.exception;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.wildcatcloud.wildcat.common.security.component.WilCatAuth2ExceptionSerializer;
+import com.wildcatcloud.wildcat.common.security.component.WildCatAuth2ExceptionSerializer;
 
 /**
  * @Author WlidcatQin
  * @Date 2019/12/26 20:42
  */
-@JsonSerialize(using = WilCatAuth2ExceptionSerializer.class)
+@JsonSerialize(using = WildCatAuth2ExceptionSerializer.class)
 public class InvalidException  extends WilCatAuth2Exception {
 
     public InvalidException(String msg, Throwable t) {

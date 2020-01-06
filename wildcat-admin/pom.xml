@@ -24,6 +24,7 @@
     <name>wildcat-admin</name>
     <modules>
         <module>wildcat-admin-api</module>
+        <module>wildcat-admin-biz</module>
     </modules>
     <packaging>pom</packaging>
 

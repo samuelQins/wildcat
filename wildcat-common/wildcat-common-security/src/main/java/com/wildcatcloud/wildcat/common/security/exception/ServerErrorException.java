@@ -12,14 +12,14 @@
 package com.wildcatcloud.wildcat.common.security.exception;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.wildcatcloud.wildcat.common.security.component.WilCatAuth2ExceptionSerializer;
+import com.wildcatcloud.wildcat.common.security.component.WildCatAuth2ExceptionSerializer;
 import org.springframework.http.HttpStatus;
 
 /**
  * @Author WlidcatQin
  * @Date 2019/12/26 20:37
  */
-@JsonSerialize(using = WilCatAuth2ExceptionSerializer.class)
+@JsonSerialize(using = WildCatAuth2ExceptionSerializer.class)
 public class ServerErrorException extends WilCatAuth2Exception {
 
     public ServerErrorException(String msg, Throwable t) {

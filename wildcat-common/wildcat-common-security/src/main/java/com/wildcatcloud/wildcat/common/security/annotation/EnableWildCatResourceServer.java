@@ -11,7 +11,7 @@
  */
 package com.wildcatcloud.wildcat.common.security.annotation;
 
-import com.wildcatcloud.wildcat.common.security.component.WilCatResourceServerAutoConfiguration;
+import com.wildcatcloud.wildcat.common.security.component.WildCatResourceServerAutoConfiguration;
 import com.wildcatcloud.wildcat.common.security.component.WildCatSecurityBeanDefinitionRegistrar;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -30,6 +30,6 @@ import java.lang.annotation.*;
 @Inherited
 @EnableResourceServer
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@Import({WilCatResourceServerAutoConfiguration.class, WildCatSecurityBeanDefinitionRegistrar.class})
+@Import({WildCatResourceServerAutoConfiguration.class, WildCatSecurityBeanDefinitionRegistrar.class})
 public @interface EnableWildCatResourceServer {
 }

@@ -41,6 +41,9 @@ public class WildCatUserDetailsServiceImpl implements WildCatUserDetailsService 
         if (cache != null && cache.get(username) != null) {
             return (WildCatUser) cache.get(username).get();
         }
-        return null;
+        if (cache!=null && cache.get(username) == null) {
+            throw new UsernameNotFoundException("用户不存在");
+        }
+        return new WildCatUser(1,1,1,"admin","123456",true,true,true,true,null);
     }
 }

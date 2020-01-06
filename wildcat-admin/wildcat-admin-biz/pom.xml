@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>wildcat-admin</artifactId>
+        <groupId>com.wildcatcloud.wildcat</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wildcat-admin-biz</artifactId>
+    <description>WildCat 系统关键性配置权限管理系统业务处理模块</description>
+    <dependencies>
+        <!--upms api、model 模块-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-admin-api</artifactId>
+        </dependency>
+        <!--日志处理-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-log</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-data</artifactId>
+        </dependency>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-swagger</artifactId>
+        </dependency>
+        <!--eureka 客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+        <!--spring security 、oauth、jwt依赖-->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-security</artifactId>
+        </dependency>
+        <!--支持动态路由配置 -->
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-gateway</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!--数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+    </dependencies>
+</project>

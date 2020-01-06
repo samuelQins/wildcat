@@ -13,12 +13,14 @@ package com.wildcatcloud.wildcat.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Author WlidcatQin
  * @Date 2019/12/26 21:12
  */
 @SpringCloudApplication
+@EnableFeignClients
 public class WildCatAuthApplication {
     public static void main(String[] args) {
         SpringApplication.run(WildCatAuthApplication.class, args);

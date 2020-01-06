@@ -23,9 +23,9 @@ import lombok.SneakyThrows;
  * @Date 2019/12/26 20:31
  * 定义异常BootOAuth2Exception 的序列化类
  */
-public class WilCatAuth2ExceptionSerializer extends StdSerializer<WilCatAuth2Exception> {
+public class WildCatAuth2ExceptionSerializer extends StdSerializer<WilCatAuth2Exception> {
 
-    public WilCatAuth2ExceptionSerializer() {
+    public WildCatAuth2ExceptionSerializer() {
         super(WilCatAuth2Exception.class);
     }
 

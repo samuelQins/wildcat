@@ -12,7 +12,7 @@
 package com.wildcatcloud.wildcat.common.security.exception;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.wildcatcloud.wildcat.common.security.component.WilCatAuth2ExceptionSerializer;
+import com.wildcatcloud.wildcat.common.security.component.WildCatAuth2ExceptionSerializer;
 import lombok.Getter;
 import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 
@@ -20,7 +20,7 @@ import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
  * @Author WlidcatQin
  * @Date 2019/12/26 20:30
  */
-@JsonSerialize(using = WilCatAuth2ExceptionSerializer.class)
+@JsonSerialize(using = WildCatAuth2ExceptionSerializer.class)
 public class WilCatAuth2Exception extends OAuth2Exception {
 
     @Getter
