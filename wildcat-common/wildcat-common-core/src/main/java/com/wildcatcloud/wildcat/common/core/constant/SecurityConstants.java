@@ -77,7 +77,7 @@ public interface SecurityConstants {
     /**
      * oauth 客户端信息
      */
-    String CLIENT_DETAILS_KEY = "pigx_oauth:client:details";
+    String CLIENT_DETAILS_KEY = "wildcat_oauth:client:details";
 
     /**
      * 微信获取OPENID

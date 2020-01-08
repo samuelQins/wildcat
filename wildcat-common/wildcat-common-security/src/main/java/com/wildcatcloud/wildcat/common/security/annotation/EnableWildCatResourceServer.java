@@ -32,4 +32,11 @@ import java.lang.annotation.*;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @Import({WildCatResourceServerAutoConfiguration.class, WildCatSecurityBeanDefinitionRegistrar.class})
 public @interface EnableWildCatResourceServer {
+    /**
+     * false：上下文获取用户名
+     * true： 上下文获取全部用户信息
+     *
+     * @return
+     */
+    boolean details() default false;
 }

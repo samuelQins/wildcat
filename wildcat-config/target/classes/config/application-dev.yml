@@ -1,3 +1,8 @@
+# 加解密根密码
+jasypt:
+  encryptor:
+    password: wildcat #根密码
+
 # redis 相关
 spring:
   redis:
@@ -42,3 +47,14 @@ swagger:
     token-url-list:
       - http://localhost:30080/auth/oauth/token
 
+
+security:
+  oauth2:
+    client:
+      # 默认放行url,如果子模块重写这里的配置就会被覆盖
+      ignore-urls:
+        - /actuator/**
+        - /v2/api-docs
+    resource:
+      loadBalanced: true
+      token-info-uri: http://wilcat-auth/oauth/check_token

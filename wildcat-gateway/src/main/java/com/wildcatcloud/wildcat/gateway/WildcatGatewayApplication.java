@@ -21,8 +21,8 @@ import org.springframework.cloud.client.SpringCloudApplication;
  */
 @EnableWildcatDynamicRoute
 @SpringCloudApplication
-public class WildcatGatewayApplication {
+public class WildCatGatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(WildcatGatewayApplication.class, args);
+        SpringApplication.run(WildCatGatewayApplication.class, args);
     }
 }

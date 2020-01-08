@@ -33,8 +33,6 @@ import org.springframework.web.client.RestTemplate;
  * @Date 2019/12/27 21:02
  */
 @Slf4j
-@Configurable
-@EnableResourceServer
 public class WildCatResourceServerConfigurerAdapter extends ResourceServerConfigurerAdapter {
     @Autowired
     protected ResourceAuthExceptionEntryPoint resourceAuthExceptionEntryPoint;

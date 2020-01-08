@@ -11,6 +11,7 @@
  */
 package com.wildcatcloud.wildcat.auth;
 
+import com.wildcatcloud.wildcat.common.security.annotation.EnableWildCatFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -20,7 +21,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Date 2019/12/26 21:12
  */
 @SpringCloudApplication
-@EnableFeignClients
+@EnableWildCatFeignClients
 public class WildCatAuthApplication {
     public static void main(String[] args) {
         SpringApplication.run(WildCatAuthApplication.class, args);
