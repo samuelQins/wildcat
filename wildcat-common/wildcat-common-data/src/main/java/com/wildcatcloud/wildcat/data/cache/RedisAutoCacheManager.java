@@ -65,4 +65,6 @@ public class RedisAutoCacheManager extends RedisCacheManager {
 	public Cache getCache(String name) {
 		return super.getCache(name + StrUtil.DASHED + TenantContextHolder.getTenantId());
 	}
+
+
 }

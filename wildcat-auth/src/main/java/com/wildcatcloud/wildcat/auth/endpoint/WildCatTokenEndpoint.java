@@ -19,6 +19,7 @@ import com.wildcatcloud.wildcat.common.core.constant.CommonConstants;
 import com.wildcatcloud.wildcat.common.core.constant.PaginationConstants;
 import com.wildcatcloud.wildcat.common.core.constant.SecurityConstants;
 import com.wildcatcloud.wildcat.common.core.util.Result;
+import com.wildcatcloud.wildcat.common.security.annotation.Inner;
 import com.wildcatcloud.wildcat.data.tenant.TenantContextHolder;
 import lombok.AllArgsConstructor;
 import org.springframework.cache.CacheManager;
@@ -115,7 +116,7 @@ public class WildCatTokenEndpoint {
      * @param params 分页参数
      * @return
      */
-//    @Inner
+    @Inner
     @PostMapping("/page")
     public Result<Page> tokenList(@RequestBody Map<String, Object> params) {
         //根据分页参数获取对应数据

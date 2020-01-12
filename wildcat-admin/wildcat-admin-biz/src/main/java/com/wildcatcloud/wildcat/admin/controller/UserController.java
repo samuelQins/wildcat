@@ -16,6 +16,7 @@ import com.baomidou.mybatisplus.extension.api.R;
 import com.wildcatcloud.wildcat.admin.api.entity.SysUser;
 import com.wildcatcloud.wildcat.admin.service.SysUserService;
 import com.wildcatcloud.wildcat.common.core.util.Result;
+import com.wildcatcloud.wildcat.common.security.annotation.Inner;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,6 +36,7 @@ public class UserController {
     private final SysUserService userService;
 
     @GetMapping("/info/{username}")
+    @Inner
     public Result info(@PathVariable String username) {
         SysUser user = userService.getOne(Wrappers.<SysUser>query()
                 .lambda().eq(SysUser::getUsername, username));

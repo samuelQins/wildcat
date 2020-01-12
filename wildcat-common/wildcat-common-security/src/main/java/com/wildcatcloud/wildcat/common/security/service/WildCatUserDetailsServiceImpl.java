@@ -57,14 +57,14 @@ public class WildCatUserDetailsServiceImpl implements WildCatUserDetailsService 
         if (cache != null && cache.get(username) != null) {
             return (WildCatUser) cache.get(username).get();
         }
-        Result<UserInfo> result = remoteUserService.info(username);
+        Result<UserInfo> result = remoteUserService.info(username,SecurityConstants.FROM_IN);
         UserDetails userDetails = getUserDetails(result);
         cache.put(username, userDetails);
         return userDetails;
     }
 
     /**
-     * 构建userdetails
+     * 构建userdetails用户：admin 登录失败，异常
      *
      * @param result 用户信息
      * @return

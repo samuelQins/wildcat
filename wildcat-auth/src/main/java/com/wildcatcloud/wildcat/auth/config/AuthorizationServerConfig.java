@@ -133,7 +133,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
             additionalInfo.put("username", wildCatUser.getUsername());
             additionalInfo.put("dept_id", wildCatUser.getDeptId());
             additionalInfo.put("tenant_id", wildCatUser.getTenantId());
-            additionalInfo.put("license", SecurityConstants.PIGX_LICENSE);
+            additionalInfo.put("license", SecurityConstants.WILDCAT_LICENSE);
             ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(additionalInfo);
             return accessToken;
         };

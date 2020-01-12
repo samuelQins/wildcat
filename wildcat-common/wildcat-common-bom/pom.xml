@@ -110,6 +110,12 @@
                 <artifactId>wildcat-common-security</artifactId>
                 <version>${wildcat.version}</version>
             </dependency>
+            <!--网关模块-->
+            <dependency>
+                <groupId>com.wildcatcloud.wildcat</groupId>
+                <artifactId>wildcat-common-gateway</artifactId>
+                <version>${wildcat.version}</version>
+            </dependency>
             <!--代码生成模板引擎-->
             <!--数据库操作-->
             <dependency>

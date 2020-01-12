@@ -44,7 +44,7 @@ public interface SecurityConstants {
     /**
      * 项目的license
      */
-    String PIGX_LICENSE = "made by pigx";
+    String WILDCAT_LICENSE = "made by wildcat";
 
     /**
      * 内部

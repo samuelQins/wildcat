@@ -26,6 +26,10 @@
             <groupId>com.wildcatcloud.wildcat</groupId>
             <artifactId>wildcat-common-data</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.wildcatcloud.wildcat</groupId>
+            <artifactId>wildcat-common-gateway</artifactId>
+        </dependency>
         <!--swagger-->
         <dependency>
             <groupId>com.wildcatcloud.wildcat</groupId>

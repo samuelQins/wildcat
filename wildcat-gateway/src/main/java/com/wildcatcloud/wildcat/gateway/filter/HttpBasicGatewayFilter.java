@@ -37,7 +37,7 @@ public class HttpBasicGatewayFilter extends AbstractGatewayFilterFactory {
             } else {
                 ServerHttpResponse response = exchange.getResponse();
                 response.setStatusCode(HttpStatus.UNAUTHORIZED);
-                response.getHeaders().add(HttpHeaders.WWW_AUTHENTICATE, "Basic Realm=\"pigx\"");
+                response.getHeaders().add(HttpHeaders.WWW_AUTHENTICATE, "Basic Realm=\"wildcat\"");
                 return response.setComplete();
             }
         };

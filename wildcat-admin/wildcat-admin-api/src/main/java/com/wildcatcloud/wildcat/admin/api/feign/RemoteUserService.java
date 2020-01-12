@@ -12,6 +12,7 @@
 package com.wildcatcloud.wildcat.admin.api.feign;
 
 import com.wildcatcloud.wildcat.admin.api.dto.UserInfo;
+import com.wildcatcloud.wildcat.common.core.constant.SecurityConstants;
 import com.wildcatcloud.wildcat.common.core.constant.ServiceNameConstants;
 import com.wildcatcloud.wildcat.common.core.util.Result;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -33,5 +34,6 @@ public interface RemoteUserService {
      * @return R
      */
     @GetMapping("/user/info/{username}")
-    Result<UserInfo> info(@PathVariable("username") String username);
+    Result<UserInfo> info(@PathVariable("username") String username
+            , @RequestHeader(SecurityConstants.FROM) String from);
 }
