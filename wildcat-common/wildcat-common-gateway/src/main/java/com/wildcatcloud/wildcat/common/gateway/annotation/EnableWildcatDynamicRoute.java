@@ -19,7 +19,7 @@ import java.lang.annotation.*;
 /**
  * @Author WlidcatQin
  * @Date 2019/12/10 19:53
- * 开启pigx 动态路由
+ * 开启wildcat 动态路由
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

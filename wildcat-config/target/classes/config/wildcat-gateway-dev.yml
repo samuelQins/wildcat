@@ -2,12 +2,12 @@
 security:
   encode:
     # 前端密码密钥，必须16位
-    key: 'wildcatwildcatbs'
+    key: 'pigxpigxpigxpigx'
 
 # 不校验验证码终端
 ignore:
   clients:
     - test
+    - wildcat
   swagger-providers:
-#    - wildcat-auth
-#    - wildcat-tx-manager
+    - wildcat-tx-manager

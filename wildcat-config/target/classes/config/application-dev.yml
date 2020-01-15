@@ -45,7 +45,7 @@ swagger:
       - scope: server
         description: server all
     token-url-list:
-      - http://localhost:30080/auth/oauth/token
+      - http://localhost:9999/auth/oauth/token
 
 
 security:
@@ -57,4 +57,4 @@ security:
         - /v2/api-docs
     resource:
       loadBalanced: true
-      token-info-uri: http://wilcat-auth/oauth/check_token
+      token-info-uri: http://wildcat-auth/oauth/check_token

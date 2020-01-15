@@ -16,6 +16,7 @@ import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
 import org.springframework.http.server.reactive.ServerHttpRequest;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
@@ -37,6 +38,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.a
  *  * <p>
  *  * 支持swagger添加X-Forwarded-Prefix header  （F SR2 已经支持，不需要自己维护）
  */
+@Component
 public class WildCatRequestGlobalFilter implements GlobalFilter, Ordered {
     /**
      * Process the Web request and (optionally) delegate to the next

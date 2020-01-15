@@ -34,7 +34,7 @@ public class SwaggerProperties {
      **/
     private String basePackage = "";
     /**
-     * swagger会解析的url规则
+     * swagger会解析的url规则`
      **/
     private List<String> basePath = new ArrayList<>();
     /**

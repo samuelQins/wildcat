@@ -8,6 +8,6 @@ security:
 ignore:
   clients:
     - test
+    - wildcat
   swagger-providers:
-#    - wildcat-auth
-#    - wildcat-tx-manager
+    - wildcat-tx-manager

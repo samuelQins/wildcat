@@ -13,6 +13,7 @@ package com.wildcatcloud.wildcat.admin;
 
 import com.wildcatcloud.wildcat.common.security.annotation.EnableWildCatFeignClients;
 import com.wildcatcloud.wildcat.common.security.annotation.EnableWildCatResourceServer;
+import com.wildcatcloud.wildcat.common.swagger.annotation.EnableWildcatSwagger2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 
@@ -23,6 +24,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 @SpringCloudApplication
 @EnableWildCatFeignClients
 @EnableWildCatResourceServer
+@EnableWildcatSwagger2
 public class WildCatAdminApplication {
     public static void main(String[] args) {
         SpringApplication.run(WildCatAdminApplication.class, args);
